@@ -1,0 +1,11 @@
+<h1>To Do:</h1>
+<h2><%= @task.title %></h2>
+<h3>Details:</h3>
+<h3><%= @task.details %><br></h3>
+<p>
+  Completed:
+  <% if @task.completed %>
+    &#9989; <% else %>
+      &#10060;
+  <% end %>
+</p>

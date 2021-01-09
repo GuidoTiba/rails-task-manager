@@ -1,0 +1,19 @@
+<h1>My Tasks &#9200; </h1>
+<ol>
+  <% @tasks.each do |task| %>
+    <li><%= link_to task.title, "/tasks/#{task.id}" %>
+      <% if task.completed %>
+        &#9989; <% else %>
+          &#10060;
+      <% end %>
+      <%= link_to "Delete #{task.title}",
+            "tasks/#{task.id}",
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+    </li>
+  <% end %>
+</ol>
+
+<div class="new-btn">
+  <%= link_to "Create New Task", "/tasks/new" %>
+</div>

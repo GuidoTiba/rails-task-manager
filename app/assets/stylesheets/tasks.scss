@@ -1,0 +1,43 @@
+// Place all the styles related to the tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+a {
+  text-decoration: none;
+}
+
+.new-btn a {
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.new-btn a:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+
+li a {
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #e7bcbc 5%, #fb6d6d 100%);
+	background-color:#c3a5a5;
+	border-radius:10px;
+  border:1px solid #ffc8c8;
+  padding:5px 8px;
+  text-decoration:none;
+  font-family:Arial;
+  font-size:19px;
+  text-transform: capitalize;
+  color: white;
+}
+li {
+  margin-bottom: 30px;
+}
